@@ -16,6 +16,10 @@
     color: #fff;
 }
 
+.ModalSelectedWatch p:nth-child(2) {
+    text-transform: initial!important;
+}
+
 .overlay {
     height: 100%;
     width: 100%;

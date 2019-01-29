@@ -7,7 +7,6 @@ class ModalTotalAmount extends React.Component {
         super(props)
 
         this.state = {
-            watch: [],
             showModal: false
         }
     }

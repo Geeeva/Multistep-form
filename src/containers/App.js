@@ -165,7 +165,7 @@ class App extends Component {
                 tooltiptext: false
             });
             let totalAmount = this.state.selectedWatchList.reduce((accumulator, el) => {
-            return accumulator + el.selectedWatchAmount;
+                return accumulator + el.selectedWatchAmount;
             },0);
 
             this.setState({
@@ -299,9 +299,7 @@ class App extends Component {
                          </div>
                          
                          <div className="list-products">
-                            <ul>
-                               {enteredWatches}
-                            </ul> 
+                            {enteredWatches}
                         </div>
                          
                         <div className="shopping-cart">
