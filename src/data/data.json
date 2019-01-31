@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "The Shawshank Redemption", 
+    "releaseDate": "17 February 1995",
+    "genre": "drama",
+    "productionCompany": "Castle Rock Entertainment",
+    "rating": "9.2"
+  },
+  {
+    "id": 2,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "title": "The Godfather", 
+    "releaseDate": "24 August 1972",
+    "genre": "crime, drama",
+    "productionCompany": "Paramount Pictures",
+    "rating": "9.2"
+  },
+  {
+    "id": 3,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "title": "The Godfather: Part II", 
+    "releaseDate": "15 May 1975",
+    "genre": "crime, drama",
+    "productionCompany": "Paramount Pictures",
+    "rating": "9"
+  },
+  {
+    "id": 4,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "The Dark Knight", 
+    "releaseDdate": " 24 July 2008",
+    "genre": "action, crime, drama",
+    "productionCompany": "Warner Bros",
+    "rating": "9.0"
+  },
+  {
+    "id": 5,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "Angry Men", 
+    "releaseDate": "10 April 1957",
+    "genre": "drama",
+    "productionCompany": "Orion-Nova Productions",
+    "rating": "8.9" 
+  },
+  {
+    "id": 6,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "Schindler's List", 
+    "releaseDate": "18 February 1994",
+    "genre": "biography, drama, history",
+    "productionCompany": "Universal Pictures",
+    "rating": "8.9" 
+  },
+  {
+    "id": 7,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "The Lord of the Rings: The Return of the King", 
+    "releaseDate": "17 December 2003",
+    "genre": "adventure, drama, fantasy ",
+    "productionCompany": "New Line Cinema",
+    "rating": "7.0" 
+  },
+  {
+    "id": 8,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY268_CR1,0,182,268_AL_.jpg",
+    "title": "Pulp Fiction", 
+    "releaseDate": "21 October 1994",
+    "genre": "crime, drama",
+    "productionCompany": "Miramax",
+    "rating": "5.0" 
+  },
+  {
+    "id": 9,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "The Good, the Bad and the Ugly", 
+    "releaseDate": "8 September 1968",
+    "genre": "western",
+    "productionCompany": "Produzioni Europee Associate",
+    "rating": "3.9" 
+  },
+  {
+    "id": 10,
+    "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMjJmYTNkNmItYjYyZC00MGUxLWJhNWMtZDY4Nzc1MDAwMzU5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "title": "Fight Club", 
+    "releaseDate": "12 November 1999",
+    "genre": "drama",
+    "productionCompany": "Fox 2000 Pictures",
+    "rating": "2.0" 
+  }
+]

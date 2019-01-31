@@ -1,0 +1,44 @@
+
+.tableHeading {
+	display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.tableHeading div {
+	display: inline-block;
+	padding: 50px;
+}
+
+.tableData {
+	display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.tableData div {
+	display: inline-block;
+	padding: 50px;
+}
+
+.Pagination {
+	display: inline-flex;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	border-radius: 5px;
+	background-color: #44E19F;
+	height: 40px;
+	width: 40px;
+  	display: inline-block;
+  	box-sizing: border-box;
+  	border-style: solid;
+  	display: inline-flex;
+  	justify-content: center;
+  	align-items: center;
+}
