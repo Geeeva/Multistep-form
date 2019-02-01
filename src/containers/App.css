@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: "RobotoRegular", "Helvetica Neue", sans-serif;
+    font-size: 14px;
 }
 
 p {
@@ -25,4 +26,8 @@ p {
     margin-right: auto;
     margin-left: auto;
     max-width: 100%;
+}
+
+body {
+    background-color: #CDCCC8;
 }

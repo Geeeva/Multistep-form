@@ -9,7 +9,7 @@ class Table extends Component {
             filteredData: this.props.data,
             searchFieldInput: '',
             radioSearch: this.props.radioSearch,
-            selectBoxOption: 1,
+            selectBoxOption: -1,
             transformed: false,
             currentPage: 1,
             itemsPerPage: 5
@@ -71,12 +71,7 @@ class Table extends Component {
         console.log(this.state.currentPage);
     }
 
-
     render() {
-
-        /*filteredData: this.props.data,
-        currentPage: 1,
-        itemsPerPage: 3*/
         
         const indexOfLastItemfilteredData = this.state.currentPage * this.state.itemsPerPage;
         const indexOfFirstItemfilteredData = indexOfLastItemfilteredData - this.state.itemsPerPage;
@@ -92,7 +87,7 @@ class Table extends Component {
                     row={row}
                     clicked={this.buttonDeleteHandler.bind(this, index)}
                 />          
-                )
+            )
         })
 
         /*Creating array for pagination*/
@@ -119,39 +114,43 @@ class Table extends Component {
             <React.Fragment>
                 <div className="container-fluid">
                     <div className="container">
-                        <form>
-                            {/*Search field*/}  
-                            <input
-                                className={"Search" + (this.state.transformed === true ?
-                                        ' transformed' : '')} 
-                                type="text"
-                                placeholder={(this.state.transformed === true ? 
-                                '' : 'Type here')}
-                                maxLength="20"
-                                value={this.state.searchFieldInput} required
-                                onChange={this.updatedSearch.bind(this)}
-                            />
+                        <div className="FormWrapper">
+                            <form className="FormContainer">
+                                {/*Search field*/}  
+                                <input
+                                    className={"Search" + (this.state.transformed === true ?
+                                            ' transformed' : '')} 
+                                    type="text"
+                                    placeholder={(this.state.transformed === true ? 
+                                    '' : 'Type here')}
+                                    maxLength="20"
+                                    value={this.state.searchFieldInput} required
+                                    onChange={this.updatedSearch.bind(this)}
+                                />
 
-                            <button type="submit" onClick={event => this.submitHandler(event)}>
-                                Search
-                            </button>
+                                <button className="submit" type="submit" onClick={event => this.submitHandler(event)}>
+                                    Search
+                                </button>
 
-                            {/*Radio buttons*/}
-                            <label htmlFor="title">
-                                <input type="radio" name="title" id="title" value="title" checked={this.state.radioSearch === "title"} 
-                                onChange={this.searchHandler}/>
-                                title
-                            </label>
-                            <label htmlFor="genre">
-                                <input type="radio" name="genre" id="genre" value="genre" checked={this.state.radioSearch === "genre"} 
-                                onChange={this.searchHandler}/>
-                                genre
-                            </label> 
+                                {/*Radio buttons*/}
+                                <div>
+                             
+                                    <label className="forTitle" htmlFor="title">
+                                        <input type="radio" name="title" id="title" value="title" checked={this.state.radioSearch === "title"} 
+                                        onChange={this.searchHandler}/>
+                                        title
+                                    </label>
+                                    <label className="forGenre" htmlFor="genre">
+                                        <input type="radio" name="genre" id="genre" value="genre" checked={this.state.radioSearch === "genre"} 
+                                        onChange={this.searchHandler}/>
+                                        genre
+                                    </label> 
+                                </div>
 
-                            {/*Select dropdown*/}
-                            <label>
-                              Ranking:
-                                <select value={this.state.selectBoxOption} onChange={this.selectBoxHandler}>
+                                {/*Select dropdown*/}
+
+                                {/*<select value={this.state.selectBoxOption} onChange={this.selectBoxHandler}>
+                                    <option value='-1' disabled>Select</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -162,13 +161,22 @@ class Table extends Component {
                                     <option value="8">8</option>
                                     <option value="9">9</option>
                                     <option value="10">10</option>
+                                </select>*/}
+
+                                <select value={this.state.selectBoxOption} onChange={(e)=>{this.setState({selectBoxOption: e.target.value})}}>
+                                    <option value='-1' disabled>Rating</option>
+                                    {
+                                        [1, 2, 3, 4, 5, 6, 7, 8, 9].map((i,j)=>{
+                                          return <option key={i} value={i}>{i}</option>
+                                        })
+                                    }
                                 </select>
-                            </label>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div className="container">
                         <div>
-                            <div className="tableHeading">
+                            <div className="TableHeading">
                                 <div>No.</div>
                                 <div>Picture</div>
                                 <div>Title</div>
@@ -178,21 +186,10 @@ class Table extends Component {
                                 <div>Rating</div>
                                 <div></div>
                             </div>
-                            <div>
-                              {/*{this.state.currentSet.map((row, index) => {
-                                    return (
-                                        <TableRow 
-                                            numeration={index + 1}
-                                            key={row.id} 
-                                            row={row}
-                                            clicked={this.buttonDeleteHandler.bind(this, index)}
-                                        />
-                                    )
-                                    })
-                                }*/}
+                            <div className="TableDataWrapper">
                                 {renderItems}
                             </div>
-                            <div>
+                            <div className="PaginationWrapper">
                                 <ul>
                                     {renderPageNumbers}
                                 </ul>
