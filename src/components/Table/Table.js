@@ -6,15 +6,18 @@ class Table extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            wishlist: this.props.wishlist,
+            switchToList: false,
             filteredData: this.props.data,
             searchFieldInput: '',
             radioSearch: this.props.radioSearch,
             selectBoxOption: -1,
-            transformed: false,
             currentPage: 1,
             itemsPerPage: 5
         }
     }
+
+     /*On input field changing*/
 
     updatedSearch = (event) => {
         this.setState({
@@ -22,11 +25,15 @@ class Table extends Component {
         })
     }
 
+    /*Radio buttons selection*/
+
     searchHandler = (event) => {
         this.setState({
             radioSearch: event.target.value
         })
     };
+
+    /*Select box selection*/
 
     selectBoxHandler = (event) => {
         this.setState({selectBoxOption: event.target.value});
@@ -67,11 +74,11 @@ class Table extends Component {
         this.setState({
             currentPage: Number(event.target.id)
         });
-
-        console.log(this.state.currentPage);
     }
 
     render() {
+
+        console.log(this.state.filteredData);
         
         const indexOfLastItemfilteredData = this.state.currentPage * this.state.itemsPerPage;
         const indexOfFirstItemfilteredData = indexOfLastItemfilteredData - this.state.itemsPerPage;
@@ -98,6 +105,7 @@ class Table extends Component {
         }
 
         /*Implementing array of pagination*/
+
         const renderPageNumbers = pageNumbers.map(number => {
             return (
                 <li className="Pagination"
@@ -118,11 +126,9 @@ class Table extends Component {
                             <form className="FormContainer">
                                 {/*Search field*/}  
                                 <input
-                                    className={"Search" + (this.state.transformed === true ?
-                                            ' transformed' : '')} 
+                                    className="Search" 
                                     type="text"
-                                    placeholder={(this.state.transformed === true ? 
-                                    '' : 'Type here')}
+                                    placeholder="Type here"
                                     maxLength="20"
                                     value={this.state.searchFieldInput} required
                                     onChange={this.updatedSearch.bind(this)}

@@ -16,19 +16,20 @@
     grid-template-rows: auto;
 }
 
-.FormContainer select {
-	padding: 10px;
-	border-radius: 5px;
-}
-
 .Search {
 	width: 100%;
-	margin-left: 15px;
+	margin-left: 30px;
 	border: none;
 	border-radius: 5px;
 	padding-top: 10px;
 	padding-left: 15px;
 	padding-bottom: 10px;
+	transition: border .3s ease-in-out;
+	outline: none;
+}
+
+.Search:focus {
+	border: 1px solid rgb(169, 169, 169);
 }
 
 .submit {
@@ -40,6 +41,20 @@
 	padding-right: 15px;
 	padding-bottom: 10px;
 	cursor: pointer;
+	transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.submit:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+.FormContainer select {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 50px;
+	border-radius: 5px;
 }
 
 .forTitle, .forGenre {
@@ -76,16 +91,11 @@
 }
 
 .TableData div {
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .TableData:nth-child(1) {
 	padding-top: 30px;
-}
-
-.TableData div img {
-	max-width: 100%;
-  	height: auto;
 }
 
 .TableData button {
@@ -98,6 +108,44 @@
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
+	transition: background-color .3s ease-in-out;
+}
+
+.TableData button:focus, .TableData button:hover {
+	background-color: #fff;
+} 
+
+.TableData a .PicWrapper {
+	position: relative;
+	text-align: center;
+	color: #fff;
+}
+
+.TableData a .PicWrapper img {
+	max-width: 100%;
+  	height: auto;
+}
+
+.TableData a .overlay {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	transition: opacity .3s ease-in-out;
+}
+
+.TableData a:hover .overlay {
+	opacity: 1;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.TableData a .overlay span {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
 }
 
 .PaginationWrapper {
@@ -110,7 +158,6 @@
 	display: inline-flex;
 	cursor: pointer;
 	font-size: 20px;
-	font-weight: 700;
 	color: #fff;
 	border: transparent;
 	border-radius: 5px;
@@ -124,4 +171,9 @@
   	display: inline-flex;
   	justify-content: center;
   	align-items: center;
+  	transition: background-color .3s ease-in-out;
+}
+
+.Pagination:focus, .Pagination:hover {
+	background-color: #000;
 }

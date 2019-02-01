@@ -6,7 +6,8 @@
     "releaseDate": "17 February 1995",
     "genre": "drama",
     "productionCompany": "Castle Rock Entertainment",
-    "rating": "9.2"
+    "rating": "9.2",
+    "url": "https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "releaseDate": "24 August 1972",
     "genre": "crime, drama",
     "productionCompany": "Paramount Pictures",
-    "rating": "9.2"
+    "rating": "9.2",
+    "url": "https://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2"
   },
   {
     "id": 3,
@@ -24,16 +26,18 @@
     "releaseDate": "15 May 1975",
     "genre": "crime, drama",
     "productionCompany": "Paramount Pictures",
-    "rating": "9"
+    "rating": "9.0",
+    "url": "https://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3"
   },
   {
     "id": 4,
     "thumbnailUrl": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "title": "The Dark Knight", 
-    "releaseDdate": " 24 July 2008",
+    "releaseDdate": "24 July 2008",
     "genre": "action, crime, drama",
     "productionCompany": "Warner Bros",
-    "rating": "9.0"
+    "rating": "9.0",
+    "url": "https://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "releaseDate": "10 April 1957",
     "genre": "drama",
     "productionCompany": "Orion-Nova Productions",
-    "rating": "8.9" 
+    "rating": "8.9",
+    "url": "https://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "releaseDate": "18 February 1994",
     "genre": "biography, drama, history",
     "productionCompany": "Universal Pictures",
-    "rating": "8.9" 
+    "rating": "8.9",
+    "url": "https://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6" 
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "releaseDate": "17 December 2003",
     "genre": "adventure, drama, fantasy ",
     "productionCompany": "New Line Cinema",
-    "rating": "7.0" 
+    "rating": "7.0",
+    "url": "https://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "releaseDate": "21 October 1994",
     "genre": "crime, drama",
     "productionCompany": "Miramax",
-    "rating": "5.0" 
+    "rating": "5.0",
+    "url": "https://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "releaseDate": "8 September 1968",
     "genre": "western",
     "productionCompany": "Produzioni Europee Associate",
-    "rating": "3.9" 
+    "rating": "3.9",
+    "url": "https://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9"
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
     "releaseDate": "12 November 1999",
     "genre": "drama",
     "productionCompany": "Fox 2000 Pictures",
-    "rating": "2.0" 
+    "rating": "2.0",
+    "url": "https://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=CPQAKQDJYY581ZS1438N&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10" 
   }
 ]
