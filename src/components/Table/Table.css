@@ -17,11 +17,12 @@
 }
 
 .Search {
-	width: 100%;
+	width: 80%;
 	margin-left: 30px;
 	border: none;
 	border-radius: 5px;
 	padding-top: 10px;
+	padding-right: 15px;
 	padding-left: 15px;
 	padding-bottom: 10px;
 	transition: border .3s ease-in-out;
@@ -75,6 +76,10 @@
     padding-bottom: 20px;
 }
 
+.TableHeading div {
+	font-size: 16px;
+}
+
 .TableDataWrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -90,10 +95,6 @@
     align-items: center;
 }
 
-.TableData div {
-	margin-bottom: 20px;
-}
-
 .TableData:nth-child(1) {
 	padding-top: 30px;
 }
@@ -101,9 +102,8 @@
 .TableData button {
 	border: transparent;
 	border-radius: 5px;
-	background-color: #EDEDEC;
+	background-color: #DDDDDD;
 	color: #000;
-	font-weight: 700;
 	font-size: 20px;
 	height: 30px;
 	width: 30px;
@@ -119,6 +119,7 @@
 	position: relative;
 	text-align: center;
 	color: #fff;
+	margin-bottom: 20px;
 }
 
 .TableData a .PicWrapper img {
@@ -163,6 +164,7 @@
 	border-radius: 5px;
 	background-color: #E8B708;
 	margin-right: 5px;
+	margin-bottom: 20px;
 	height: 40px;
 	width: 40px;
   	display: inline-block;
@@ -176,4 +178,37 @@
 
 .Pagination:focus, .Pagination:hover {
 	background-color: #000;
+}
+
+@media screen and (max-width: 1252px) {
+
+}
+
+/*** Start of large tablet styles ***/
+@media screen and (max-width: 991px) {
+
+	.FormContainer {
+		grid-template-columns: 25% 20% 30% 25%;
+	}
+
+	.FormContainer select {
+		padding-right: 0px;
+	}
+}
+
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+
+	.TableHeading, .TableData {
+		grid-template-columns: 7% 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
+	}
+
+	.Search, .submit {
+		width: 100px;
+	}
+
+	.Search {
+		margin-left: 0px;
+	}
+
 }

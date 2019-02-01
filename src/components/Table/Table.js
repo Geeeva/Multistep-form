@@ -6,8 +6,6 @@ class Table extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            wishlist: this.props.wishlist,
-            switchToList: false,
             filteredData: this.props.data,
             searchFieldInput: '',
             radioSearch: this.props.radioSearch,
@@ -55,7 +53,7 @@ class Table extends Component {
             filteredData: filteredData
         });
 
-        console.log(this.state.selectBoxOption);
+        sessionStorage.setItem('data', this.state.filteredData);
     }
 
     /*Deleting item from film list, when clicking on x*/
@@ -76,9 +74,22 @@ class Table extends Component {
         });
     }
 
-    render() {
+    /*Loads the selected array of films from localStorage*/
 
-        console.log(this.state.filteredData);
+    componentWillMount() {
+        localStorage.getItem('filteredData') && this.setState({
+            filteredData: JSON.parse(localStorage.getItem('filteredData'))
+        }) 
+    }
+
+    /*Sets selected array of films in localStorage*/
+
+    componentWillUpdate(nextProps, nextState) {
+        localStorage.setItem('filteredData', JSON.stringify(nextState.filteredData));
+        localStorage.setItem('filteredDataDate', Date.now());
+    }
+
+    render() {
         
         const indexOfLastItemfilteredData = this.state.currentPage * this.state.itemsPerPage;
         const indexOfFirstItemfilteredData = indexOfLastItemfilteredData - this.state.itemsPerPage;
@@ -184,7 +195,7 @@ class Table extends Component {
                         <div>
                             <div className="TableHeading">
                                 <div>No.</div>
-                                <div>Picture</div>
+                                <div>Photo</div>
                                 <div>Title</div>
                                 <div>Release date</div>
                                 <div>Genre</div>

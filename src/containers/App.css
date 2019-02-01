@@ -31,3 +31,50 @@ p {
 body {
     background-color: #CDCCC8;
 }
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+
+@media screen and (max-width: 1252px) {
+
+}
+
+/*** Start of large tablet styles ***/
+@media screen and (max-width: 991px) {
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .Serach {
+        width: 150px;
+    }
+}
+
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+
+}
+
