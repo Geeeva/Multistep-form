@@ -1,5 +1,5 @@
 
-# Shopping cart
+# film filtering
 Used tools:
 
 - **HTML5**
@@ -7,14 +7,15 @@ Used tools:
 - **React JS**
 - **External library - Normalize.css** 
 
-Project demonstrates simple shopping process in 3 steps, entering items, selecting items and incerasing/decreasing the quantity of selected items.
+Project demonstrates simple application with film wish list, whereas the data between session is stored in localStorage.
+The films are being filtered based on title/genre and selected rating.
 
 #Steps to run this project:
 
-- **git clone https://github.com/Geeeva/Shopping-cart.git**
+- **git clone https://github.com/Geeeva/Film-filtering.git**
 - **cd Bild**
 - **npm install**
 - **npm start**
 
-**[Demo to project](https://geeeva.github.io/Shopping-cart/)**
+**[Demo to project](https://geeeva.github.io/Film-filtering/)**
 
