@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Table.css';
 import TableRow from './TableRow/TableRow';
+import Pagination from './Pagination/Pagination';
 
 class Table extends Component {
     constructor(props) {
@@ -8,9 +9,11 @@ class Table extends Component {
         this.state = {
             filteredData: this.props.data,
             searchFieldInput: '',
-            radioSearch: this.props.radioSearch,
+            radioSearch: "title",
             selectBoxOption: -1,
-            currentPage: 1,
+            currentPage: 2,
+            activePage: true,
+            activeIndex: 0,
             itemsPerPage: 5
         }
     }
@@ -70,7 +73,8 @@ class Table extends Component {
 
     paginationClickHandler = (event) => {
         this.setState({
-            currentPage: Number(event.target.id)
+            currentPage: Number(event.target.id),
+            activeIndex: Number(event.target.id)
         });
     }
 
@@ -90,7 +94,7 @@ class Table extends Component {
     }
 
     render() {
-        
+        console.log(this.state.currentPage);
         const indexOfLastItemfilteredData = this.state.currentPage * this.state.itemsPerPage;
         const indexOfFirstItemfilteredData = indexOfLastItemfilteredData - this.state.itemsPerPage;
         const currentSet = this.state.filteredData.slice(indexOfFirstItemfilteredData, indexOfLastItemfilteredData);
@@ -112,22 +116,35 @@ class Table extends Component {
 
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(this.state.filteredData.length / this.state.itemsPerPage); i++) {
-          pageNumbers.push(i);
+            pageNumbers.push(i);
         }
 
         /*Implementing array of pagination*/
 
-        const renderPageNumbers = pageNumbers.map(number => {
+        const renderPageNumbers = pageNumbers.map((number, index) => {
             return (
                 <li className="Pagination"
-                  key={number}
-                  id={number}
-                  onClick={this.paginationClickHandler}
+                    key={number}
+                    id={number}
+                    onClick={this.paginationClickHandler.bind(index)}
                 >
                   {number}
                 </li>
             );
         });
+
+        /*const renderPageNumbers = pageNumbers.map((number, index) => {
+            const active = this.state.activeIndex;
+            console.log(active);
+            return (
+                <Pagination
+                    key={number}
+                    id={number}
+                    active={index === active} //Vraca true ili false 
+                    clicked={this.paginationClickHandler}
+                />
+            );
+        })*/
         
         return(
             <React.Fragment>
@@ -151,7 +168,6 @@ class Table extends Component {
 
                                 {/*Radio buttons*/}
                                 <div>
-                             
                                     <label className="forTitle" htmlFor="title">
                                         <input type="radio" name="title" id="title" value="title" checked={this.state.radioSearch === "title"} 
                                         onChange={this.searchHandler}/>

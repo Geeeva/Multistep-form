@@ -32,8 +32,6 @@ body {
     background-color: #CDCCC8;
 }
 
-
-
 @media (min-width: 768px) {
     .container {
         width: 750px;
@@ -66,10 +64,6 @@ body {
     .container {
         padding-right: 0px;
         padding-left: 0px;
-    }
-
-    .Serach {
-        width: 150px;
     }
 }
 

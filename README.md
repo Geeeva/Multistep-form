@@ -13,7 +13,7 @@ The films are being filtered based on title/genre and selected rating.
 #Steps to run this project:
 
 - **git clone https://github.com/Geeeva/Film-filtering.git**
-- **cd Bild**
+- **cd Film-filtering**
 - **npm install**
 - **npm start**
 

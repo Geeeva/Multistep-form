@@ -176,6 +176,10 @@
 	background-color: #000;
 }
 
+.active {
+	background-color: #000;
+}
+
 @media screen and (max-width: 1252px) {
 
 }
