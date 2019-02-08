@@ -198,11 +198,6 @@
 
 /*** Start of medium tablet styles ***/
 @media screen and (max-width: 768px) {
-
-	.TableHeading, .TableData {
-		grid-template-columns: 7% 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
-	}
-
 	.Search, .submit {
 		width: 100px;
 	}
@@ -211,4 +206,34 @@
 		margin-left: 0px;
 	}
 
+	.TableHeading, .TableData {
+		grid-template-columns: 7% 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
+	}
+}
+
+/*** Start of medium tablet styles ***/
+@media screen and (max-width: 768px) {
+	.Search, .submit {
+		width: 100px;
+	}
+
+	.Search {
+		margin-left: 0px;
+	}
+
+	.TableHeading, .TableData {
+		grid-template-columns: 7% 15.5% 15.5% 15.5% 15.5% 15.5% 15.5%;
+	}
+}
+
+/*** Start of phone styles ***/
+@media screen and (max-width: 479px) {
+
+	.FormContainer {
+		grid-template-columns: 20% 20% 35% 25%;
+	}
+
+	.Search, .submit {
+		width: 75px;
+	}
 }

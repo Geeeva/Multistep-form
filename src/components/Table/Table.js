@@ -11,8 +11,7 @@ class Table extends Component {
             searchFieldInput: '',
             radioSearch: "title",
             selectBoxOption: -1,
-            currentPage: 2,
-            activePage: true,
+            currentPage: 1,
             activeIndex: 0,
             itemsPerPage: 5
         }
@@ -71,10 +70,9 @@ class Table extends Component {
 
     /*Manages the pagination*/
 
-    paginationClickHandler = (event) => {
+    paginationClickHandler = (event, index) => {
         this.setState({
-            currentPage: Number(event.target.id),
-            activeIndex: Number(event.target.id)
+            currentPage: index,
         });
     }
 
@@ -94,7 +92,6 @@ class Table extends Component {
     }
 
     render() {
-        console.log(this.state.currentPage);
         const indexOfLastItemfilteredData = this.state.currentPage * this.state.itemsPerPage;
         const indexOfFirstItemfilteredData = indexOfLastItemfilteredData - this.state.itemsPerPage;
         const currentSet = this.state.filteredData.slice(indexOfFirstItemfilteredData, indexOfLastItemfilteredData);
@@ -121,7 +118,7 @@ class Table extends Component {
 
         /*Implementing array of pagination*/
 
-        const renderPageNumbers = pageNumbers.map((number, index) => {
+        /*const renderPageNumbers = pageNumbers.map((number, index) => {
             return (
                 <li className="Pagination"
                     key={number}
@@ -131,20 +128,19 @@ class Table extends Component {
                   {number}
                 </li>
             );
-        });
+        });*/
 
-        /*const renderPageNumbers = pageNumbers.map((number, index) => {
-            const active = this.state.activeIndex;
-            console.log(active);
+        const renderPageNumbers = pageNumbers.map((number, index) => {
+            const active = this.state.currentPage;
             return (
                 <Pagination
                     key={number}
                     id={number}
-                    active={index === active} //Vraca true ili false 
-                    clicked={this.paginationClickHandler}
+                    active={number === active}/*Checks if the page number of li is the same as the one that is just clicked*/
+                    clicked={(e) => this.paginationClickHandler(e, number)}
                 />
             );
-        })*/
+        })
         
         return(
             <React.Fragment>
