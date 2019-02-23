@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
-import Table from '../components/Table/Table';
+import UserForm from '.././components/UserForm';
 import './App.css';
 import 'normalize.css';
-import data from '.././data/data.json';
 
 class App extends Component {
     constructor(props) {
         super(props)
+
         this.state = {
-            data: data,
+           
         }
     }
 
-    render () {
-        return ( 
+    render() {
+        return(
             <div className="App">
-                <Table 
-                    data={this.state.data}
-                 />
+                <div className="container-fluid">
+                    <div className="container-contact100">
+                        <div className="wrap-contact100">
+                            <div className="contact100-form validate-form">
+                                <span className="contact100-form-title">
+                                    Registration Form
+                                </span>
+                                <UserForm />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
