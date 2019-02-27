@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/Multistep-form/static/css/2.55fb16d2.chunk.css"
   },
   {
-    "revision": "fb8cfe0829bcad01956d52ab5b1cb4c7",
+    "revision": "b5dbf8927f679de6c39c1d1d9e978e14",
     "url": "/Multistep-form/index.html"
   }
 ];
